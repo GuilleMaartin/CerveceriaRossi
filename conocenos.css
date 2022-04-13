@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100&family=Oswald:wght@200&family=Playfair+Display:ital@1&family=Send+Flowers&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Odia', sans-serif;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    background-color: #B5A582;
+}
+header{
+    grid-area: header;
+}
+    .nav-responsive{
+        display: none;
+    }
+    .encabezado{
+        display: flex;
+        justify-content: space-around;
+        margin: 30px;
+    }
+    .encabezado-a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: aliceblue;
+        transition: 1s;
+    }
+    .encabezado-a:hover{
+        letter-spacing: 0.2rem;
+    }
+main{   
+    grid-area: main;
+    margin-top: 1rem;
+    width: 100%;
+}
+    .main-h1{
+        text-transform: uppercase;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;   
+        color: #9c6644;
+    }
+    .main-container{
+        display: flex;
+        gap: 2rem;
+    }
+    .main-img{
+        margin: 1rem;
+        width: 400px;
+        height: 400px;
+    }
+    .main-titulo{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        color: #9c6644;
+    }
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+@media screen and (max-width: 768px) {
+        body{
+            background-color: #B5A582;
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "main main main"
+            "footer footer footer";
+            width: 100%;
+        }
+        header{
+            grid-area: header;
+        }
+            .nav-responsive{
+                display: flex;
+                justify-content: space-between;
+            }
+            .nav-responsive1{
+                padding: 1rem;
+            }
+            .nav-responsive2{
+                padding: 1rem;
+            }
+            .encabezado{
+                display: flex;
+                justify-content: space-around;
+                width: 90%;
+
+            }
+                .encabezado-a{
+                    display: none;
+                }
+        main{
+            grid-area: main;
+            margin-top: 1rem;
+            width: 100%;
+            
+        }
+        .main-h1{
+            text-transform: uppercase;
+           color: #9c6644;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;   
+        }
+            .main-img{
+                height: 300px;
+                border: 1px solid black;
+                  
+            }
+            .main-titulo{
+                color: #9c6644;
+            }
+        footer{
+            grid-area: footer;
+            display: flex;
+            gap: 1rem;
+            text-transform: uppercase;
+        }
+}
+ 
+@media screen and (max-width: 425px) {
+    body{
+        background-color: #B5A582;
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+        width: 100%;
+    }
+    header{
+        grid-area: header;
+        width: 100%;
+    }
+        .nav-responsive{
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav-responsive1{
+            padding: 1rem;
+        }
+        .nav-responsive2{
+            padding: 1rem;
+        }
+        .encabezado{
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+
+        }
+            .encabezado-a{
+                display: none;
+            }
+    main{
+        grid-area: main;
+        width: 100%;
+        display: grid;
+        gap: 1rem;
+    }
+        .main-img{
+            height: 300px;
+            border: 1px solid black; 
+            width: 100%;     
+        }
+        .main-titulo{
+            display: flex;
+            width: 100%;
+        }
+    footer{
+        margin-top:2rem ;
+        grid-area: footer;
+        display: flex;
+        gap: 2rem;
+        text-transform: uppercase;
+        color:#9c6644
+    }
+}

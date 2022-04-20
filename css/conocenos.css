@@ -14,6 +14,8 @@ body{
     "footer footer footer";
     background-color: #B5A582;
 }
+
+/*HEADER AREA*/
 header{
     grid-area: header;
 }
@@ -33,7 +35,11 @@ header{
     }
     .encabezado-a:hover{
         letter-spacing: 0.2rem;
+        color: #000000;
     }
+
+    /*MAIN AREA*/
+
 main{   
     grid-area: main;
     margin-top: 1rem;
@@ -62,12 +68,19 @@ main{
         gap: 2rem;
         color: #9c6644;
     }
-footer{
-    grid-area: footer;
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-}
+
+    /*FOOTER AREA*/
+    
+    footer{
+        grid-area: footer;
+        min-height: 1vh;
+        display: flex;
+        margin-top: 4.5%;
+        justify-content: center;
+        background-color: #808080;
+        text-transform: uppercase;
+    }
+    
 @media screen and (max-width: 768px) {
         body{
             background-color: #B5A582;
@@ -129,60 +142,3 @@ footer{
         }
 }
  
-@media screen and (max-width: 425px) {
-    body{
-        background-color: #B5A582;
-        display: grid;
-        grid-template-areas: 
-        "header header header"
-        "main main main"
-        "footer footer footer";
-        width: 100%;
-    }
-    header{
-        grid-area: header;
-        width: 100%;
-    }
-        .nav-responsive{
-            display: flex;
-            justify-content: space-between;
-        }
-        .nav-responsive1{
-            padding: 1rem;
-        }
-        .nav-responsive2{
-            padding: 1rem;
-        }
-        .encabezado{
-            display: flex;
-            justify-content: space-around;
-            width: 90%;
-
-        }
-            .encabezado-a{
-                display: none;
-            }
-    main{
-        grid-area: main;
-        width: 100%;
-        display: grid;
-        gap: 1rem;
-    }
-        .main-img{
-            height: 300px;
-            border: 1px solid black; 
-            width: 100%;     
-        }
-        .main-titulo{
-            display: flex;
-            width: 100%;
-        }
-    footer{
-        margin-top:2rem ;
-        grid-area: footer;
-        display: flex;
-        gap: 2rem;
-        text-transform: uppercase;
-        color:#9c6644
-    }
-}

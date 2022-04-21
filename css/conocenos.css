@@ -80,6 +80,16 @@ main{
         background-color: #808080;
         text-transform: uppercase;
     }
+    footer::before{
+        content: "<<";
+        color: #F7797D;
+        font-size: 2rem;
+    }
+    footer::after{
+        content: ">>";
+        color: #F7797D;
+        font-size: 2rem;
+    }
     
 @media screen and (max-width: 768px) {
         body{

@@ -111,12 +111,21 @@ footer{
     justify-content: center;
     background-color: #808080;
     text-transform: uppercase;
+    transition: 1s;
+}
+footer::before{
+    content: "<<";
+    color: #F7797D;
+    font-size: 2rem;
+}
+footer::after{
+    content: ">>";
+    color: #F7797D;
+    font-size: 2rem;
 }
 
 
-
-
-@media  (max-width: 768px){
+@media (max-width: 768px){
 
     body{
         background-color: #F7797D;

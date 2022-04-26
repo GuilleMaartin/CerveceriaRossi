@@ -75,22 +75,15 @@ main{
         grid-area: footer;
         min-height: 1vh;
         display: flex;
-        margin-top: 4.5%;
+        margin-top: 5.8%;
         justify-content: center;
         background-color: #808080;
         text-transform: uppercase;
     }
-    footer::before{
-        content: "<<";
-        color: #F7797D;
-        font-size: 2rem;
+    .footer-h1{
+        font-size: 25px;
     }
-    footer::after{
-        content: ">>";
-        color: #F7797D;
-        font-size: 2rem;
-    }
-    
+  
 @media screen and (max-width: 768px) {
         body{
             background-color: #B5A582;

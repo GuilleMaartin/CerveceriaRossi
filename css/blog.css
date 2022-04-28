@@ -24,19 +24,13 @@ header{
     gap: 3rem;
 }
 
-.contenedor-header{
-    background-color: #F7797D;
-}
 
-.header-hijo{
-    background-color: #F7797D;
-}
 
 .header-menu{
     display: flex;
     justify-content: space-around;
     padding: 30px;
-    background-color: #F7797D;
+    background: #bbb;
 }
     .header-menu-a{
         text-decoration: none;

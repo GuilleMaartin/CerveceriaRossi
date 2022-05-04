@@ -1,0 +1,16 @@
+$redes: (
+    header: #F7797D,
+    footer: #808080,
+);
+
+$estilos:(
+    color: #000,
+    fuente: 1rem,
+    espacio: 1rem,
+    centrado: center,
+);
+
+@mixin tamaño($w,$h) {
+    height: $h;
+    width: $w;
+}   

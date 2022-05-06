@@ -38,22 +38,24 @@ header{
     display: flex;
     justify-content: space-around;
     margin: 30px;
-    background-color: #F7797D;
+    background-color: map-get($map: $redes, $key:header );
 }
     .header-menu-a{
         text-decoration: none;
         text-transform: uppercase;
         font-size: 1.5rem;
-        color: #ffffff;
+        color: map-get($map: $redes, $key:section );
         transition: 1s;
     }
     .header-menu-a:hover{
         letter-spacing: .2rem;
+        border-radius: 30%;
+        background-color: map-get($map: $redes, $key:section );
         color: map-get( $estilos , color);
     }
 
 .nav-responsive{
-    background-color: #F7797D;
+    background-color: map-get($map: $redes, $key:header );
     display: none;
     justify-content: space-between;
 }
@@ -64,7 +66,7 @@ header{
 
 section{
     grid-area: section;
-    background-color: #F7797D;
+    background-color: map-get($map: $redes, $key:header);
 }
 .container{
     display: flex;
@@ -92,7 +94,7 @@ section{
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    color: #000000;
+    color: map-get($map: $redes, $key:section );
     transition: 3s;
     min-width: 200px;
 }
@@ -117,7 +119,7 @@ footer{
 @media  (max-width: 768px){
 
     body{
-        background-color: #F7797D;
+        background-color: map-get($map: $redes, $key:header );
         display: grid;
         grid-template-areas: 
         "header header header"
@@ -136,11 +138,11 @@ footer{
         display: flex;
         justify-content: space-between;
     }
-        .nav-responsive1{
-            padding: 10px;
+        .svg1{
+            padding: 2rem;
             font-size: 2rem;
         }
-        .nav-responsive2{
+        .svg2{
             padding: 10px;
             font-size: 2rem;
         }

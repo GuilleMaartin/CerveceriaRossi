@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Anek Odia', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  /*1rem ==> 10px*/
+}
+
+body {
+  width: 100%;
+      grid-template-areas: "header header header" "section section section" "footer footer footer";
+}
+
+/*HEADER SECTION*/
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10% 90%;
+      grid-template-rows: 10% 90%;
+  gap: 3rem;
+}
+
+header {
+  background-color: #3c6e71;
+}
+
+section {
+  background-color: #bbc7a4;
+}
+
+footer {
+  background-color: #f2f5ea;
+}
+
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 30px;
+  background-color: #3c6e71;
+}
+
+.header-menu-a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #bbc7a4;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.header-menu-a:hover {
+  letter-spacing: .2rem;
+  border-radius: 30%;
+  background-color: #bbc7a4;
+  color: #000;
+}
+
+.nav-responsive {
+  background-color: #3c6e71;
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/*SECTION AREA*/
+section {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: section;
+  background-color: #3c6e71;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-img {
+  height: 500px;
+  width: 500px;
+  padding: 1rem;
+}
+
+.imagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.titulo {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  gap: 5rem;
+  font-size: 1.8rem;
+}
+
+.titulo-h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  color: #bbc7a4;
+  -webkit-transition: 3s;
+  transition: 3s;
+  min-width: 200px;
+}
+
+.titulo-h1:hover {
+  color: gainsboro;
+  letter-spacing: 5px;
+}
+
+/*FOOTER SECTION*/
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  min-height: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: #3c6e71;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "header header header" "section section section" "footer footer footer";
+    width: 100%;
+  }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: header;
+  }
+  .hijo-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-responsive {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .svg1 {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+  .svg2 {
+    padding: 10px;
+    font-size: 2rem;
+  }
+  .div-instagramClass {
+    display: none;
+  }
+  .header-menu {
+    display: none;
+  }
+  .contenedor-presentacion {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: section;
+    padding: 1rem;
+    display: -ms-grid;
+    display: grid;
+    gap: 2rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  .presentacion-titulo {
+    text-transform: uppercase;
+  }
+  footer {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: footer;
+    text-transform: uppercase;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */

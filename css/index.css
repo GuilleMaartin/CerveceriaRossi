@@ -20,37 +20,42 @@ header {
   gap: 3rem; }
 
 header {
-  background-color: #F7797D; }
+  background-color: #3c6e71; }
+
+section {
+  background-color: #bbc7a4; }
 
 footer {
-  background-color: #808080; }
+  background-color: #f2f5ea; }
 
 .header-menu {
   display: flex;
   justify-content: space-around;
   margin: 30px;
-  background-color: #F7797D; }
+  background-color: #3c6e71; }
 
 .header-menu-a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #bbc7a4;
   transition: 1s; }
 
 .header-menu-a:hover {
   letter-spacing: .2rem;
+  border-radius: 30%;
+  background-color: #bbc7a4;
   color: #000; }
 
 .nav-responsive {
-  background-color: #F7797D;
+  background-color: #3c6e71;
   display: none;
   justify-content: space-between; }
 
 /*SECTION AREA*/
 section {
   grid-area: section;
-  background-color: #F7797D; }
+  background-color: #3c6e71; }
 
 .container {
   display: flex; }
@@ -78,7 +83,7 @@ section {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  color: #000000;
+  color: #bbc7a4;
   transition: 3s;
   min-width: 200px; }
 
@@ -97,7 +102,7 @@ footer {
 
 @media (max-width: 768px) {
   body {
-    background-color: #F7797D;
+    background-color: #3c6e71;
     display: grid;
     grid-template-areas: "header header header" "section section section" "footer footer footer";
     width: 100%; }
@@ -109,10 +114,10 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between; }
-  .nav-responsive1 {
-    padding: 10px;
+  .svg1 {
+    padding: 2rem;
     font-size: 2rem; }
-  .nav-responsive2 {
+  .svg2 {
     padding: 10px;
     font-size: 2rem; }
   .div-instagramClass {

@@ -1,4 +1,4 @@
-*{
+* /*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@ body{
     background-color: #2a2d43;
 }
 
-/*HEADER SECTION*/
+/*HEADER SECTION*/                                      /*
 header{
     display: grid;
     grid-template-rows: 10% 90%;
@@ -49,7 +49,7 @@ header{
 }
 
 
-/*aside*/
+/*aside*/                                                   /*
 .aside-contenedor{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -72,7 +72,7 @@ aside div img{
     transform:translateX(170px);
 }
 
-/*FOOTER*/
+/*FOOTER*/                                                      /*
 
 
 footer{

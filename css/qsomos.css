@@ -40,34 +40,35 @@ header{
 
     /*MAIN AREA*/
 
-main{   
+nav{   
     grid-area: main;
     margin-top: 1rem;
     width: 100%;
 }
-    .main-h1{
-        text-transform: uppercase;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;   
-        color: #9c6644;
-    }
-    .main-container{
+    
+    .nav-container{
         display: flex;
         gap: 2rem;
     }
-    .main-img{
+    .nav-img{
         margin: 1rem;
         width: 400px;
         height: 400px;
     }
-    .main-titulo{
+    .nav-titulo{
         margin-top: 2rem;
         display: flex;
         flex-direction: column;
         gap: 2rem;
         color: #9c6644;
     }
+        nav div h1{
+            text-transform: uppercase;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;   
+            color: #9c6644;
+        }
 
     /*FOOTER AREA*/
     
